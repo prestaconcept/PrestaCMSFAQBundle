@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="presta_cms_faq.admin.faq_category.class">Presta\CMSFAQBundle\Admin\FAQCategoryAdmin</parameter>
+        <parameter key="presta_cms_faq.admin.faq.class">Presta\CMSFAQBundle\Admin\FAQAdmin</parameter>
+        <parameter key="presta_cms_faq.model.faq_category.class">Presta\CMSFAQBundle\Entity\FAQCategory</parameter>
+        <parameter key="presta_cms_faq.model.faq.class">Presta\CMSFAQBundle\Entity\FAQ</parameter>
+    </parameters>
+
+    <services>
+        <service id="presta_cms_faq.admin.faq_category" class="%presta_cms_faq.admin.faq_category.class%">
+            <tag name="sonata.admin" manager_type="orm" group="presta_cms_faq" label_catalogue="PrestaCMSFAQBundle" label="title.faq_category"/>
+            <argument/>
+            <argument>%presta_cms_faq.model.faq_category.class%</argument>
+            <argument />
+            <call method="addChild">
+                <argument type="service" id="presta_cms_faq.admin.faq" />
+            </call>
+        </service>
+
+        <service id="presta_cms_faq.admin.faq" class="%presta_cms_faq.admin.faq.class%">
+            <tag name="sonata.admin" manager_type="orm" group="presta_cms_faq" label_catalogue="PrestaCMSFAQBundle" label="title.faq"/>
+            <argument/>
+            <argument>%presta_cms_faq.model.faq.class%</argument>
+            <argument />
+        </service>
+    </services>
+
+</container>

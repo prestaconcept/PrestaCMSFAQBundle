@@ -77,7 +77,8 @@ class FAQCategory extends AbstractTranslatable implements TranslatableInterface
 
     public function __construct()
     {
-        $this->fas  = new ArrayCollection();
+        parent::__construct();
+        $this->faqs  = new ArrayCollection();
     }
 
     /**
@@ -85,7 +86,7 @@ class FAQCategory extends AbstractTranslatable implements TranslatableInterface
      */
     public function __toString()
     {
-        return (string)$this->getTilte();
+        return (string)$this->getTitle();
     }
 
     /**

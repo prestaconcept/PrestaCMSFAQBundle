@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="PrestaCMSFAQBundle.en.xliff">
+        <body>
+            <trans-unit id="navigation.cms.faq.label">
+                <source>navigation.cms.faq.label</source>
+                <target>FAQ</target>
+            </trans-unit>
+            <trans-unit id="navigation.cms.faq.description">
+                <source>navigation.cms.faq.description</source>
+                <target>Gestion des FAQs par catégorie</target>
+            </trans-unit>
+            <trans-unit id="form.fieldset.label_general">
+                <source>form.fieldset.label_general</source>
+                <target>Général</target>
+            </trans-unit>
+            <trans-unit id="sidemenu.link_faq_category_edit">
+                <source>sidemenu.link_faq_category_edit</source>
+                <target>Edition</target>
+            </trans-unit>
+            <trans-unit id="sidemenu.link_faq_list">
+                <source>sidemenu.link_faq_list</source>
+                <target>Liste de FAQs</target>
+            </trans-unit>
+            <trans-unit id="form.label.enabled">
+                <source>form.label.enabled</source>
+                <target>Actif</target>
+            </trans-unit>
+            <trans-unit id="form.label.position">
+                <source>form.label.position</source>
+                <target>Position</target>
+            </trans-unit>
+            <trans-unit id="form.label.question">
+                <source>form.label.question</source>
+                <target>Question</target>
+            </trans-unit>
+            <trans-unit id="form.label.answer">
+                <source>form.label.answer</source>
+                <target>Réponse</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -25,6 +25,8 @@ use Doctrine\Common\Collections\ArrayCollection;
 class FAQ extends AbstractTranslatable implements TranslatableInterface
 {
     /**
+     * @var int
+     *
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -48,12 +50,12 @@ class FAQ extends AbstractTranslatable implements TranslatableInterface
     protected $question;
 
     /**
-     * @var string $description
+     * @var string $answer
      *
      * @Gedmo\Translatable
-     * @ORM\Column(name="description", type="text", nullable=true)
+     * @ORM\Column(name="answer", type="text", nullable=true)
      */
-    protected $description;
+    protected $answer;
 
     /**
      * @var boolean $enabled
@@ -79,4 +81,105 @@ class FAQ extends AbstractTranslatable implements TranslatableInterface
      * )
      */
     protected $translations;
+
+    public function __toString()
+    {
+        return (string) $this->getQustion();
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param FAQCategory $category
+     */
+    public function setCategory(FAQCategory $category)
+    {
+        $this->category = $category;
+    }
+
+    /**
+     * @return FAQCategory
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param string $question
+     */
+    public function setQuestion($question)
+    {
+        $this->question = $question;
+    }
+
+    /**
+     * @return string
+     */
+    public function getQuestion()
+    {
+        return $this->question;
+    }
+
+    /**
+     * @param string $answer
+     */
+    public function setAnswer($answer)
+    {
+        $this->answer = $answer;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAnswer()
+    {
+        return $this->answer;
+    }
+
+    /**
+     * @param boolean $enabled
+     */
+    public function setEnabled($enabled)
+    {
+        $this->enabled = $enabled;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getEnabled()
+    {
+        return $this->enabled;
+    }
+
+    /**
+     * @param int $position
+     */
+    public function setPosition($position)
+    {
+        $this->position = $position;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPosition()
+    {
+        return $this->position;
+    }
 }
