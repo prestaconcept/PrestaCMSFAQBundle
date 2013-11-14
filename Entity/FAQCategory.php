@@ -86,7 +86,7 @@ class FAQCategory extends AbstractTranslatable implements TranslatableInterface
      */
     public function __toString()
     {
-        return (string)$this->getTitle();
+        return (string) $this->getTitle();
     }
 
     /**
