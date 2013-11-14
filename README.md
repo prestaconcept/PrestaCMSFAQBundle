@@ -2,9 +2,12 @@ PrestaCMSFAQBundle
 ==================
 
 [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSFAQBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaCMSFAQBundle)
-
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSFAQBundle/badges/quality-score.png?s=c303aa6278e3f4d5ea73be53d87065ff059861a0)](https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSFAQBundle/)
 [![Latest Stable Version](https://poser.pugx.org/presta/cms-faq-bundle/v/stable.png)](https://packagist.org/packages/presta/cms-faq-bundle)
 [![Total Downloads](https://poser.pugx.org/presta/cms-faq-bundle/downloads.png)](https://packagist.org/packages/presta/cms-faq-bundle)
+
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/6134dce1-ab4b-4f93-9630-afeb67462516/big.png)](https://insight.sensiolabs.com/projects/6134dce1-ab4b-4f93-9630-afeb67462516)
+[![knpbundles.com](http://knpbundles.com/prestaconcept/PrestaCMSFAQBundle/badge)](http://knpbundles.com/prestaconcept/PrestaCMSFAQBundle)
 
 #Overview #
 
