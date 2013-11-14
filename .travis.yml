@@ -17,6 +17,9 @@ before_script:
 script:
   - phpcs --ignore=/vendor/* --extensions=php --encoding=utf-8 --standard=PSR2 -np .
 
+matrix:
+  allow_failures:
+    - env: SYMFONY_VERSION=dev-master
 
 notifications:
   email: "nbastien@prestaconcept.net"
