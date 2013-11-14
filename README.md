@@ -58,3 +58,7 @@ Released under the MIT License
 [5]: http://sandbox.prestacms.com/
 [6]: http://sandbox.prestacms.com/admin
 [7]: https://github.com/prestaconcept/PrestaSonataGedmoDoctrineExtensionsBundle
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/prestaconcept/prestacmsfaqbundle/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
