@@ -168,6 +168,7 @@ class FAQCategory extends AbstractTranslatable implements TranslatableInterface
      */
     public function addFaq(FAQ $faq)
     {
+        $faq->setCategory($this);
         $this->faqs->add($faq);
     }
 

@@ -36,7 +36,7 @@ class FAQ extends AbstractTranslatable implements TranslatableInterface
     /**
      * @var FAQCategory
      *
-     * @ORM\ManyToOne(targetEntity="Presta\CMSFAQBundle\Entity\FAQ", inversedBy="faqs")
+     * @ORM\ManyToOne(targetEntity="Presta\CMSFAQBundle\Entity\FAQCategory", inversedBy="faqs")
      * @ORM\JoinColumn(name="category_id", referencedColumnName="id", onDelete="CASCADE")
      */
     protected $category;
@@ -84,7 +84,7 @@ class FAQ extends AbstractTranslatable implements TranslatableInterface
 
     public function __toString()
     {
-        return (string) $this->getQustion();
+        return (string) $this->getQuestion();
     }
 
     /**
