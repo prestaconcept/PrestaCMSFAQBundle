@@ -2,14 +2,6 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
     <file source-language="en" target-language="en" datatype="plaintext" original="PrestaCMSFAQBundle.en.xliff">
         <body>
-            <trans-unit id="navigation.cms.faq.label">
-                <source>navigation.cms.faq.label</source>
-                <target>FAQ</target>
-            </trans-unit>
-            <trans-unit id="navigation.cms.faq.description">
-                <source>navigation.cms.faq.description</source>
-                <target>Manage FAQ and Categories</target>
-            </trans-unit>
             <trans-unit id="form.fieldset.label_general">
                 <source>form.fieldset.label_general</source>
                 <target>Général</target>
