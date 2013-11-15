@@ -81,15 +81,23 @@ class FAQAdmin extends AbstractTranslatableAdmin
 
         $formMapper
             ->with($this->trans('form.fieldset.label_general'))
-                ->add('question', 'text', array(
-                    'label' => 'form.label.question',
-                    'required' => true,
-                    'attr' => array('class' => 'sonata-medium locale locale_' . $locale))
+                ->add(
+                    'question',
+                    'text',
+                    array(
+                        'label'     => 'form.label.question',
+                        'required'  => true,
+                        'attr'      => array('class' => 'sonata-medium locale locale_' . $locale)
+                    )
                 )
-                ->add('answer', 'textarea', array(
-                    'label' => 'form.label.answer',
-                    'required' => true,
-                    'attr' => array('class' => 'wysiwyg sonata-medium locale locale_' . $locale))
+                ->add(
+                    'answer',
+                    'textarea',
+                    array(
+                        'label'     => 'form.label.answer',
+                        'required'  => true,
+                        'attr'      => array('class' => 'wysiwyg sonata-medium locale locale_' . $locale)
+                    )
                 )
                 ->add('enabled', null, array('label' => 'form.label.enabled', 'required' => false))
                 ->add('position', null, array('label' => 'form.label.position'))
