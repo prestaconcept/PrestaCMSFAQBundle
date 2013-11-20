@@ -1,0 +1,19 @@
+{% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
+
+{% block block %}
+
+    {% for faqCategory in faqCategories %}
+        <div class="cms-faq-category">
+            <h3>{{ faqCategory.title }}</h3>
+            {% for faq in faqCategory.faqs %}
+            <div class="cms-faq-question">
+                <h4>{{ faq.question }}</h4>
+                <div class="cms-faq-answer">
+                    {{ faq.answer | raw }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+
+{% endblock %}
