@@ -9,17 +9,19 @@
  */
 namespace Presta\CMSFAQBundle\Admin;
 
+use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Admin\AdminInterface;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Presta\SonataGedmoDoctrineExtensionsBundle\Admin\AbstractTranslatableAdmin;
 use Sonata\AdminBundle\Form\FormMapper;
 use Knp\Menu\ItemInterface as MenuItemInterface;
+use Sonata\AdminBundle\Show\ShowMapper;
 
 /**
  * @author Nicolas Bastien <nbastien@prestaconcept.net>
  */
-class FAQCategoryAdmin extends AbstractTranslatableAdmin
+class FAQCategoryAdmin extends Admin
 {
     /**
      * The translation domain to be used to translate messages
@@ -53,15 +55,24 @@ class FAQCategoryAdmin extends AbstractTranslatableAdmin
      */
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $locale = $this->getTranslatableLocale();
-
         $formMapper
             ->with($this->trans('form.fieldset.label_general'))
-                ->add('title', 'text', array('required' => true, 'attr' => array('class' => 'sonata-medium locale locale_' . $locale)))
+                ->add('title', 'text', array('required' => true, 'attr' => array('class' => 'sonata-medium locale')))
                 ->add('enabled', null, array('label' => 'form.label.enabled', 'required' => false))
                 ->add('position', null, array('label' => 'form.label.position'))
             ->end();
     }
+
+    protected function configureShowFields(ShowMapper $filter)
+    {
+        $filter
+            ->with($this->trans('form.fieldset.label_general'))
+                ->add('title')
+                ->add('enabled')
+                ->add('position')
+            ->end();
+    }
+
 
     /**
      * {@inheritdoc}

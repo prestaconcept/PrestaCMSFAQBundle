@@ -9,16 +9,16 @@
  */
 namespace Presta\CMSFAQBundle\Admin;
 
+use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
-use Presta\SonataGedmoDoctrineExtensionsBundle\Admin\AbstractTranslatableAdmin;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
 
 /**
  * @author Nicolas Bastien <nbastien@prestaconcept.net>
  */
-class FAQAdmin extends AbstractTranslatableAdmin
+class FAQAdmin extends Admin
 {
     /**
      * The translation domain to be used to translate messages
@@ -77,8 +77,6 @@ class FAQAdmin extends AbstractTranslatableAdmin
      */
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $locale = $this->getTranslatableLocale();
-
         $formMapper
             ->with($this->trans('form.fieldset.label_general'))
                 ->add(
@@ -87,7 +85,7 @@ class FAQAdmin extends AbstractTranslatableAdmin
                     array(
                         'label'     => 'form.label.question',
                         'required'  => true,
-                        'attr'      => array('class' => 'sonata-medium locale locale_' . $locale)
+                        'attr'      => array('class' => 'sonata-medium locale')
                     )
                 )
                 ->add(
@@ -96,7 +94,7 @@ class FAQAdmin extends AbstractTranslatableAdmin
                     array(
                         'label'     => 'form.label.answer',
                         'required'  => true,
-                        'attr'      => array('class' => 'wysiwyg sonata-medium locale locale_' . $locale)
+                        'attr'      => array('class' => 'wysiwyg sonata-medium locale')
                     )
                 )
                 ->add('enabled', null, array('label' => 'form.label.enabled', 'required' => false))
