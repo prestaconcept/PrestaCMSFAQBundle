@@ -43,11 +43,6 @@ class FAQBlockService extends BaseModelBlockService
      */
     protected function getAdditionalViewParameters(BlockInterface $block)
     {
-        $settings = array_merge(
-            $this->getDefaultSettings(),
-            $block->getSettings()
-        );
-
         return array(
             'faqCategories' => $this->getRepository()->findAll(),
         );
