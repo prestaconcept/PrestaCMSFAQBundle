@@ -14,9 +14,10 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.2",
-        "presta/cms-core-bundle": "1.*",
-        "presta/sonata-admin-extended-bundle": "1.*"
+        "php": ">=5.3.2"
+    },
+    "suggest": {
+        "presta/cms-core-bundle": "1.0.*@dev"
     },
     "autoload": {
         "psr-0": { "Presta\\CMSFAQBundle": "" }
