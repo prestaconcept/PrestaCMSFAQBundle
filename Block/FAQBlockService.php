@@ -11,7 +11,6 @@ namespace Presta\CMSFAQBundle\Block;
 
 use Presta\CMSCoreBundle\Block\BaseModelBlockService;
 use Sonata\BlockBundle\Model\BlockInterface;
-use Sonata\AdminBundle\Form\FormMapper;
 
 /**
  * @author Nicolas Bastien <nbastien@prestaconcept.net>
