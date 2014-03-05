@@ -9,7 +9,7 @@ PrestaCMSFAQBundle
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/6134dce1-ab4b-4f93-9630-afeb67462516/big.png)](https://insight.sensiolabs.com/projects/6134dce1-ab4b-4f93-9630-afeb67462516)
 [![knpbundles.com](http://knpbundles.com/prestaconcept/PrestaCMSFAQBundle/badge)](http://knpbundles.com/prestaconcept/PrestaCMSFAQBundle)
 
-#Overview #
+## Overview ##
 
 PrestaCMSFAQBundle adds FAQ in PrestaCMS.
 FAQ are structured by category and administrated with SonataAdmin and translated with [PrestaSonataGedmoDoctrineExtensionsBundle][7]
