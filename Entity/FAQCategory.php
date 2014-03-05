@@ -9,9 +9,9 @@
  */
 namespace Presta\CMSFAQBundle\Entity;
 
-use Presta\SonataGedmoDoctrineExtensionsBundle\Entity\AbstractTranslatable;
+use Sonata\TranslationBundle\Model\Gedmo\AbstractTranslatable;
 use Gedmo\Mapping\Annotation as Gedmo;
-use Presta\SonataGedmoDoctrineExtensionsBundle\Entity\TranslatableInterface;
+use Sonata\TranslationBundle\Model\TranslatableInterface;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 

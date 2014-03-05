@@ -10,7 +10,7 @@
 namespace Presta\CMSFAQBundle\Entity\FAQCategory;
 
 use Doctrine\ORM\Mapping as ORM;
-use Presta\SonataGedmoDoctrineExtensionsBundle\Entity\AbstractTranslation;
+use Sonata\TranslationBundle\Model\Gedmo\AbstractTranslation;
 
 /**
  * @ORM\Entity
