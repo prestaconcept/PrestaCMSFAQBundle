@@ -10,7 +10,7 @@
 namespace Presta\CMSFAQBundle\Entity\FAQCategory;
 
 use Doctrine\ORM\Mapping as ORM;
-use Sonata\TranslationBundle\Model\Gedmo\AbstractTranslation;
+use Sonata\TranslationBundle\Model\Gedmo\AbstractPersonalTranslation;
 
 /**
  * @ORM\Entity
@@ -22,7 +22,7 @@ use Sonata\TranslationBundle\Model\Gedmo\AbstractTranslation;
  *
  * @author Nicolas Bastien <nbastien@prestaconcept.net>
  */
-class Translation extends AbstractTranslation
+class Translation extends AbstractPersonalTranslation
 {
     /**
      * @ORM\ManyToOne(targetEntity="Presta\CMSFAQBundle\Entity\FAQCategory", inversedBy="translations")

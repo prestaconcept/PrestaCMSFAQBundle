@@ -9,7 +9,7 @@
  */
 namespace Presta\CMSFAQBundle\Entity;
 
-use Sonata\TranslationBundle\Model\Gedmo\AbstractTranslatable;
+use Sonata\TranslationBundle\Model\Gedmo\AbstractPersonalTranslatable;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Sonata\TranslationBundle\Model\TranslatableInterface;
 use Doctrine\ORM\Mapping as ORM;
@@ -22,7 +22,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  * @ORM\Entity(repositoryClass="Presta\CMSFAQBundle\Entity\FAQ\Repository")
  * @Gedmo\TranslationEntity(class="Presta\CMSFAQBundle\Entity\FAQ\Translation")
  */
-class FAQ extends AbstractTranslatable implements TranslatableInterface
+class FAQ extends AbstractPersonalTranslatable implements TranslatableInterface
 {
     /**
      * @var int

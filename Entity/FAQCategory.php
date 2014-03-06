@@ -9,11 +9,12 @@
  */
 namespace Presta\CMSFAQBundle\Entity;
 
-use Sonata\TranslationBundle\Model\Gedmo\AbstractTranslatable;
+use Sonata\TranslationBundle\Model\Gedmo\AbstractPersonalTranslatable;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Sonata\TranslationBundle\Model\TranslatableInterface;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use Sonata\TranslationBundle\Traits\Gedmo\PersonalTranslatable;
 
 /**
  * @author Nicolas Bastien <nbastien@prestaconcept.net>
@@ -22,7 +23,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  * @ORM\Entity(repositoryClass="Presta\CMSFAQBundle\Entity\FAQCategory\Repository")
  * @Gedmo\TranslationEntity(class="Presta\CMSFAQBundle\Entity\FAQCategory\Translation")
  */
-class FAQCategory extends AbstractTranslatable implements TranslatableInterface
+class FAQCategory extends AbstractPersonalTranslatable implements TranslatableInterface
 {
     /**
      * @ORM\Id
