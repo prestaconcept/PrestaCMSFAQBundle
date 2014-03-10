@@ -11,7 +11,7 @@ namespace Presta\CMSFAQBundle\Entity;
 
 use Sonata\TranslationBundle\Model\Gedmo\AbstractPersonalTranslatable;
 use Gedmo\Mapping\Annotation as Gedmo;
-use Sonata\TranslationBundle\Model\TranslatableInterface;
+use Sonata\TranslationBundle\Model\Gedmo\TranslatableInterface;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 
